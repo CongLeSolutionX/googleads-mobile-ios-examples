@@ -12,10 +12,12 @@
 		849326BB1B066A7F00863759 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 849326B91B066A7F00863759 /* Main.storyboard */; };
 		849326BD1B066A7F00863759 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 849326BC1B066A7F00863759 /* Images.xcassets */; };
 		849326C01B066A7F00863759 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 849326BE1B066A7F00863759 /* LaunchScreen.xib */; };
+		A42DCAA15A1DEDB1AFDC621B /* libPods-AdManagerRewardedInterstitialExample.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 968FE2D01F253265F2EDE62F /* libPods-AdManagerRewardedInterstitialExample.a */; };
 		A8CC5DFA2A8ECA450094B83E /* GoogleMobileAdsConsentManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8CC5DF92A8ECA440094B83E /* GoogleMobileAdsConsentManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7D1B8EBEEDA43A4A992AC52E /* Pods-AdManagerRewardedInterstitialExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AdManagerRewardedInterstitialExample.release.xcconfig"; path = "Target Support Files/Pods-AdManagerRewardedInterstitialExample/Pods-AdManagerRewardedInterstitialExample.release.xcconfig"; sourceTree = "<group>"; };
 		849326B01B066A7F00863759 /* AdManagerRewardedInterstitialExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AdManagerRewardedInterstitialExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		849326B41B066A7F00863759 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		849326B51B066A7F00863759 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -23,7 +25,9 @@
 		849326BA1B066A7F00863759 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		849326BC1B066A7F00863759 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		849326BF1B066A7F00863759 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		968FE2D01F253265F2EDE62F /* libPods-AdManagerRewardedInterstitialExample.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-AdManagerRewardedInterstitialExample.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A8CC5DF92A8ECA440094B83E /* GoogleMobileAdsConsentManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GoogleMobileAdsConsentManager.swift; sourceTree = "<group>"; };
+		F4D529184CBE87F1E74EFEFE /* Pods-AdManagerRewardedInterstitialExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AdManagerRewardedInterstitialExample.debug.xcconfig"; path = "Target Support Files/Pods-AdManagerRewardedInterstitialExample/Pods-AdManagerRewardedInterstitialExample.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,15 +35,26 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A42DCAA15A1DEDB1AFDC621B /* libPods-AdManagerRewardedInterstitialExample.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		265AFA4AD2CCD41F4777B255 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				968FE2D01F253265F2EDE62F /* libPods-AdManagerRewardedInterstitialExample.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		6B48FFAA1C599896D1BA4999 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
+				F4D529184CBE87F1E74EFEFE /* Pods-AdManagerRewardedInterstitialExample.debug.xcconfig */,
+				7D1B8EBEEDA43A4A992AC52E /* Pods-AdManagerRewardedInterstitialExample.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -50,6 +65,7 @@
 				849326B21B066A7F00863759 /* AdManagerRewardedInterstitialExample */,
 				849326B11B066A7F00863759 /* Products */,
 				6B48FFAA1C599896D1BA4999 /* Pods */,
+				265AFA4AD2CCD41F4777B255 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -90,6 +106,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 849326CF1B066A7F00863759 /* Build configuration list for PBXNativeTarget "AdManagerRewardedInterstitialExample" */;
 			buildPhases = (
+				A80B191F13685FCD45038F73 /* [CP] Check Pods Manifest.lock */,
 				849326AC1B066A7E00863759 /* Sources */,
 				849326AD1B066A7E00863759 /* Frameworks */,
 				849326AE1B066A7E00863759 /* Resources */,
@@ -151,6 +168,31 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		A80B191F13685FCD45038F73 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-AdManagerRewardedInterstitialExample-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		849326AC1B066A7E00863759 /* Sources */ = {
@@ -298,6 +340,7 @@
 		};
 		849326D01B066A7F00863759 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F4D529184CBE87F1E74EFEFE /* Pods-AdManagerRewardedInterstitialExample.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImages;
@@ -323,6 +366,7 @@
 		};
 		849326D11B066A7F00863759 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7D1B8EBEEDA43A4A992AC52E /* Pods-AdManagerRewardedInterstitialExample.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImages;
