@@ -15,10 +15,12 @@
 		507818DA2199E5DA00E5A44A /* NativeAdView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 507818D02199E5D900E5A44A /* NativeAdView.xib */; };
 		507818DC2199E5DA00E5A44A /* MySimpleNativeAdView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 507818D32199E5D900E5A44A /* MySimpleNativeAdView.swift */; };
 		507818DD2199E5DA00E5A44A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 507818D42199E5D900E5A44A /* ViewController.swift */; };
+		9F423F69CBBCDDD7E3CFFE67 /* Pods_AdManagerCustomRenderingExample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E9086F2FAA7420B806CA8FC /* Pods_AdManagerCustomRenderingExample.framework */; };
 		A8DD029A2A7BF778001530DF /* GoogleMobileAdsConsentManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8DD02992A7BF778001530DF /* GoogleMobileAdsConsentManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		03122032AABD8925421BCD7D /* Pods-AdManagerCustomRenderingExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AdManagerCustomRenderingExample.release.xcconfig"; path = "Target Support Files/Pods-AdManagerCustomRenderingExample/Pods-AdManagerCustomRenderingExample.release.xcconfig"; sourceTree = "<group>"; };
 		4AEBD8B01BF01CF200874961 /* AdManagerCustomRenderingExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AdManagerCustomRenderingExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		507818C82199E5D900E5A44A /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		507818C92199E5D900E5A44A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -29,7 +31,9 @@
 		507818D22199E5D900E5A44A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		507818D32199E5D900E5A44A /* MySimpleNativeAdView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MySimpleNativeAdView.swift; sourceTree = "<group>"; };
 		507818D42199E5D900E5A44A /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		9E9086F2FAA7420B806CA8FC /* Pods_AdManagerCustomRenderingExample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AdManagerCustomRenderingExample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A8DD02992A7BF778001530DF /* GoogleMobileAdsConsentManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GoogleMobileAdsConsentManager.swift; sourceTree = "<group>"; };
+		B508910A45733FB90E0D13AA /* Pods-AdManagerCustomRenderingExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AdManagerCustomRenderingExample.debug.xcconfig"; path = "Target Support Files/Pods-AdManagerCustomRenderingExample/Pods-AdManagerCustomRenderingExample.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,6 +41,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9F423F69CBBCDDD7E3CFFE67 /* Pods_AdManagerCustomRenderingExample.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -46,6 +51,8 @@
 		39D81D31FA25614580E39098 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
+				B508910A45733FB90E0D13AA /* Pods-AdManagerCustomRenderingExample.debug.xcconfig */,
+				03122032AABD8925421BCD7D /* Pods-AdManagerCustomRenderingExample.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -56,6 +63,7 @@
 				507818C72199E5D900E5A44A /* AdManagerCustomRenderingExample */,
 				4AEBD8B11BF01CF200874961 /* Products */,
 				39D81D31FA25614580E39098 /* Pods */,
+				6EF88DFDDAB848668CBB35EF /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -84,6 +92,14 @@
 			path = AdManagerCustomRenderingExample;
 			sourceTree = "<group>";
 		};
+		6EF88DFDDAB848668CBB35EF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9E9086F2FAA7420B806CA8FC /* Pods_AdManagerCustomRenderingExample.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -91,9 +107,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4AEBD8C21BF01CF200874961 /* Build configuration list for PBXNativeTarget "AdManagerCustomRenderingExample" */;
 			buildPhases = (
+				E51F69FAFE2BEB0FEC095D0C /* [CP] Check Pods Manifest.lock */,
 				4AEBD8AC1BF01CF200874961 /* Sources */,
 				4AEBD8AD1BF01CF200874961 /* Frameworks */,
 				4AEBD8AE1BF01CF200874961 /* Resources */,
+				87CAF4E7ECD86E6394C1D752 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -116,6 +134,7 @@
 				TargetAttributes = {
 					4AEBD8AF1BF01CF200874961 = {
 						CreatedOnToolsVersion = 7.1;
+						DevelopmentTeam = 99WD9D6Y46;
 						LastSwiftMigration = 0900;
 					};
 				};
@@ -153,6 +172,53 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		87CAF4E7ECD86E6394C1D752 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AdManagerCustomRenderingExample/Pods-AdManagerCustomRenderingExample-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
+				"${BUILT_PRODUCTS_DIR}/PromisesObjC/FBLPromises.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBLPromises.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-AdManagerCustomRenderingExample/Pods-AdManagerCustomRenderingExample-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E51F69FAFE2BEB0FEC095D0C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-AdManagerCustomRenderingExample-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		4AEBD8AC1BF01CF200874961 /* Sources */ = {
@@ -243,7 +309,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 16;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -287,7 +353,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 16;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
@@ -299,9 +365,11 @@
 		};
 		4AEBD8C31BF01CF200874961 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B508910A45733FB90E0D13AA /* Pods-AdManagerCustomRenderingExample.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImages;
+				DEVELOPMENT_TEAM = 99WD9D6Y46;
 				INFOPLIST_FILE = AdManagerCustomRenderingExample/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -318,9 +386,11 @@
 		};
 		4AEBD8C41BF01CF200874961 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 03122032AABD8925421BCD7D /* Pods-AdManagerCustomRenderingExample.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImages;
+				DEVELOPMENT_TEAM = 99WD9D6Y46;
 				INFOPLIST_FILE = AdManagerCustomRenderingExample/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

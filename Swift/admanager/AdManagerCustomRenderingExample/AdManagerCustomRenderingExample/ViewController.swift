@@ -115,7 +115,7 @@ class ViewController: UIViewController {
   }
 
   func setAdView(_ view: UIView) {
-    nativeAdView.removeFromSuperview()
+   // nativeAdView.removeFromSuperview() // to avoid force unwrap
     nativeAdView = view
     nativeAdPlaceholder.addSubview(nativeAdView)
     nativeAdView.translatesAutoresizingMaskIntoConstraints = false
